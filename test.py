@@ -21,6 +21,6 @@ class Google:
 def readFile(path):
     with open(path) as file_json:
         data = json.load(file_json)
-        print(data["accounts"])
+        return data
 
-readFile("data.json")
+data = readFile("data.json")
